@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>eCommerce Quiz</h1>
+      <p>
+        Question <span id="currentQuestionNumber">x</span> of
+        <span id="totalQuestions">x</span>
+      </p>
+      <p id="question">What does CSS stand for?</p>
+
+      <div class="answers-container">
+        <div class="answer">
+          <input type="radio" id="answer1" name="answer" value="0" />
+          <label for="answer1"></label>
+        </div>
+
+        <div class="answer">
+          <input type="radio" id="answer2" name="answer" value="1" />
+          <label for="answer2"></label>
+        </div>
+        <div class="answer">
+          <input type="radio" id="answer3" name="answer" value="2" />
+          <label for="answer3"></label>
+        </div>
+        <div class="answer">
+          <input type="radio" id="answer4" name="answer" value="3" />
+          <label for="answer4"></label>
+        </div>
+      </div>
+
+      <button class="btn" id="backBtn">Back</button>
+      <button class="btn" id="nextBtn">Next</button>
+    </main>
+
+    <div id="overlay">
+      <h2>Your score</h2>
+      <h3 id="score">0</h3>
+      <button id="reset">Restart</button>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
